@@ -1,0 +1,120 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* VARIABLES */
+
+:root {
+  --primary-pale: hsl(225, 100%, 94%);
+  --primary-color: hsl(245, 75%, 52%);
+  --secondary-pale: hsl(225, 100%, 98%);
+  --secondary-color: hsl(224, 23%, 55%);
+  --dark-color: hsl(223, 47%, 23%);
+  --font: "Red Hat Display";
+}
+
+body {
+  background-image: url("./images/pattern-background-desktop.svg");
+  background-color: var(--primary-pale);
+  font-family: var(--font);
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card_image {
+  max-width: 21.5rem;
+  border-radius: 15px 10px 0 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 21.5rem;
+  gap: 2rem;
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 0 2rem 2rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.card__apresentation {
+  text-align: center;
+}
+
+.card__title {
+  font-size: 1.3rem;
+  font-weight: 900;
+  margin-bottom: 1rem;
+  color: var(--dark-color);
+}
+
+.card__text {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--secondary-color);
+}
+
+.card__prices {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.7rem;
+  background-color: var(--secondary-pale);
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.prices__image {
+  width: 20%;
+}
+
+.card__prices a {
+  font-weight: 900;
+  color: var(--primary-color);
+}
+
+.plan-price {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  margin-right: 2rem;
+}
+
+.plan-price p {
+  color: var(--secondary-color);
+}
+
+.card_confirmation {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card_confirmation a {
+  text-align: center;
+  padding: 0.7rem 4.5rem;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.confirmation__proceed {
+  background-color: var(--primary-color);
+  color: var(--primary-pale);
+  font-size: 0.8rem;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+
+.confirmation__cancel {
+  color: var(--secondary-color);
+  font-size: 0.7rem;
+}
